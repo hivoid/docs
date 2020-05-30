@@ -12,7 +12,7 @@
 ## 语言参考
 
 * [php](/reference/php)
-* [golang](/reference/golang)
+* [go](/reference/go)
 
 ## 快捷键
 
@@ -77,6 +77,61 @@ Ctrl + J                          | 切换 Panel               | Ctrl + Space   
 Ctrl + K Ctrl + H                 | 切换 Output              | Ctrl + Shift + Space     | 触发参数提示
 Ctrl + Shift + M                  | 切换 Problems            |                          |
 Ctrl + &#96;                      | 切换 Terminal            |                          |
+
+### VSCodeVim Shortcuts
+
+#### ReplaceWithRegister 无覆盖寄存器粘贴替换
+Commands & Shortcuts  | Description
+----------------------|------------------------------------------------
+{Visual}["x]gr        | 替换选择部分
+[count]["x]gr{motion} | 快于unamed寄存器 `"_d{motion}P or "_c{motion}<C-R>"`
+[count]["x]grr        | 替换 [count] 行
+["x]gr$               | 替换到最后
+
+#### vim-easymotion 定位提示
+Commands & Shortcuts                 | Description
+-------------------------------------|--------------------------
+`<Leader><Leader>`w/b                | 向前/向后找单词
+`<Leader><Leader>`l/h                | 单词首尾和( 驼峰 _ - # )分隔 向前/向后
+`<Leader><Leader>`e/ge               | 单词结尾 向前 / 向后
+`<Leader><Leader>`j/k                | 行首 向前/向后
+`<Leader><Leader>`/`<char>`...`<CR>` | 查找串
+`<Leader><Leader>`fo                 | 查找定位字母o
+
+#### vim-surround 字符包裹
+Commands & Shortcuts       | Description
+---------------------------|-------------------------------------
+cs`<fromt><to>`            | 替换包裹字符：cs"' -> cs'\<q\> -> cst"
+ds`<target>`               | 删除包裹字符
+ys{motion}`<target>`       | 添加包裹字符 (右括号带空格)
+yss`<target>`              | 包裹整行：yssb or yss)
+{Visual}S\<p class="..."\> | 选择模式操作
+. command                  | ds, cs, and yss work with repeat.vim
+
+#### vim-sneak 查找定位
+Commands & Shortcuts   | Description
+-----------------------|--------------------------------
+s`<Char><Char>`        | 查找定位`<Char><Char>`
+`<Num>`;               | 下`<Num>`个匹配项
+ctrl-o or ``           | 回到起点
+s`<Enter>`             | 再次执行上一次查找定位
+S                      | 反向
+5sxy                   | 跳到第五个xy
+3dzqt                  | 删除到第三个qt(s被vim-surround占用通过z调用)
+`<Num>`.               | 重复执行`<Num>`次
+d;                     | 删除到下一匹配项
+yszxy]                 | 到xy的字符进行包裹(配合vim-surround)
+gUz\}                  | 将当前到 \} 的文本大写
+注意原始vim s 键的使用 | cl 等同于 s, cc 等同于 S
+
+#### vim-commentary 代码注释
+Commands & Shortcuts | Description
+---------------------|------------------------
+gcc                  | 切换行注释
+gcgc                 | 同时取消注释临近的行
+gc{motion}           | 切换{motion}指定目标注释
+gC                   | 块注释 work with vscodevim
+
 
 
 ### VSCode Markdown Shortcuts
