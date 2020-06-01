@@ -1,5 +1,7 @@
 # 数据库知识点随记
 
+[返回数据库](/database/)
+
 ## Mysql 引擎 InnoDB vs MyISAM
 
 1. InnoDB 支持事务; MyISAM 不支持事务
