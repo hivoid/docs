@@ -1,6 +1,8 @@
 * [算法](/algorithm/)
 * [设计模式](/designpattern/)
+* [开发语言](/language/)
 * [数据库](/database/)
+* [非关系型存储](/nosql/)
 * [服务器](/server/)
 * [网络](/network/)
 * [微服务](/microservice/)
