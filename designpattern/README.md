@@ -97,6 +97,79 @@
 
 ### 单例模式 (Singleton)
 
+1. 单例类只能有一个实例
+2. 单例类必须自己创建自己的唯一实例
+3. 单例类必须给所有其他对象提供这一实例
+
+**PHP**
+
+```php
+class Singleton {
+	private static $_instance;
+	private __construct(){}
+	private __clone(){}
+	public static getInstance(){
+		if (!self::$_instance) {
+			self::$_instance = new slef();
+		}
+		return self::$_instance;
+	}
+}
+```
+
+**Java**
+
+```java
+public class Singleton {
+	private volatile static Singleton instance;
+	private Singleton (){}
+	public static Singleton getInstance() {
+	if (instance == null) {
+		synchronized (Singleton.class) {
+			if (instance == null) {
+				instance = new Singleton();
+			}
+		}
+	}
+	return instance;
+	}
+}
+```
+
+**Go**
+
+```go
+package pattern
+
+import (
+	"fmt"
+	"sync"
+)
+
+var once sync.Once
+var st *singleton
+
+// Singleton interface is defined for show methods of singleton in godoc.
+type Singleton interface {
+	Talk()
+}
+
+type singleton struct {
+}
+
+func (as *singleton) Talk() {
+	fmt.Println("Hello Another Singleton!!")
+}
+
+// GetSingleton returns a asingletion pointer of which object implements Singleton interface to client.
+func GetSingleton() Singleton {
+	once.Do(func() {
+		st = new(singleton)
+	})
+	return st
+}
+```
+
 ### 原型模式 (Prototype)
 
 ### 工厂方法模式 (Factory Method)
