@@ -213,7 +213,6 @@ public class InMemoryCustomerRepository implements CustomerRepository {
 
 ## 干净架构
 >出处 [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) <br/>
->天火的博客 [干净架构最佳实践](https://blog.jaggerwang.net/clean-architecture-in-practice/)
 
 ![干净架构示意图](/clean.jpg)
 
