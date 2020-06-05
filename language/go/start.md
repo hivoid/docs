@@ -103,6 +103,8 @@ go: downloading golang.org/x/text v0.3.2
 
 go.mod 同时被更新
 
+_文件中 `// indirect` 表示间接依赖，表示主项⽬直接依赖的包不是 module 模式时, 而此包又依赖的包(主项目不依赖), 或主项目依赖包的 go.mod 不完整时缺失的包_
+
 ```
 $ cat go.mod
 module github.com/hiviod/algorithm
@@ -146,3 +148,5 @@ rsc.io/
 
 如果依赖的包或模块出于一些原因暂不能发布到线上, 可以用 `replace` 指示引入本地目录
 如果 replace 命令右边是一个文件系统的路径, 那目标目录下必须存在一个 go.mod 文件， 如果没有你可以用 `go mod init` 命令创建一个
+
+`go mod why -m <mod>` 可看 `<mod>` 被依赖的关系路径, `<mod>` 为 `all` 时, 显示所有
