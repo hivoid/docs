@@ -1,18 +1,7 @@
 # 服务器
 
-## 常用命令
+## [命令与Shell](/server/shell)
 
-**查看进程堆栈**
-
-`pstack <pid>`
-
-`gstack <pid>`
-
-```bash
-gdb
-attach <pid>
-thread apply all bt
-```
 
 ## 常用生产工具
 
@@ -28,6 +17,7 @@ thread apply all bt
 >时序数据库，常用于监控数据统计、埋点数据统计
 
 常用InfluxQL
+
 ```
 -- 查看所有的数据库
 show databases;
