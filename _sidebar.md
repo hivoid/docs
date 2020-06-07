@@ -11,4 +11,5 @@
 * [管理与合作](/management/)
 * [参考](/reference/)
 * [杂项](/misc/)
+* [问题集锦](/issues/)
 * [任务清单](/todolist/)
