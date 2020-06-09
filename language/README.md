@@ -3,6 +3,8 @@
 ## Go
 
 * [快速开始](/language/go/start)
+* [知识点](/language/go/knowledge)
+* [开发与生产](/language/go/devprod)
 
 **参考**
 
@@ -19,6 +21,7 @@
 框架手册
 
 * [Gin](https://gin-gonic.com/zh-cn/docs/)
+* [Gin notes](/language/go/gin)
 
 常用包
 
