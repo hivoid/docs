@@ -1,4 +1,6 @@
-# gin framework
+# Gin Framework Notes
+
+[返回开发语言#Go](/language/?id=go)
 
 ## 注意事项
 
