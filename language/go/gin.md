@@ -2,7 +2,7 @@
 
 ## 注意事项
 
-**在中间件是使用 goroutine**
+**在中间件里使用 goroutine**
 
 ```go
 r.GET("/long_async", func(c *gin.Context) {
@@ -20,7 +20,7 @@ r.GET("/long_async", func(c *gin.Context) {
 
 **将 request body 绑定到不同的结构体中**
 
-* c.ShouldBind 使用了 c.Request.Body, 设置为 EOF，不可重用。
+* c.ShouldBind 使用了 c.Request.Body, 并将其设置为 EOF，不可重用。
 * c.ShouldBindBodyWith 会在绑定之前将 body 存储到上下文中。 这会对性能造成轻微影响，如果调用一次就能完成绑定的话，那就不要用这个方法。
 * 只有某些格式需要此功能，如 JSON, XML, MsgPack, ProtoBuf。 对于其他格式, 如 Query, Form, FormPost, FormMultipart 可以多次调用 c.ShouldBind() 而不会造成任任何性能损失 
 
