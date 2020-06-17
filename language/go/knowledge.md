@@ -2,8 +2,21 @@
 
 [返回开发语言#Go](/language/?id=go)
 
+## 内置函数
 
-## Context
+**func close**
+`func close(c chan<- Type)`
+close关闭通道，该通道必须为双向的或只发送的。它应当只由发送者执行，而不应由接收者执行，其效果是在最后发送的值被接收后停止该通道。在最后的值从已关闭的信道中被接收后，任何对其的接收操作都会无阻塞的执行。对于已关闭的信道，语句：`x, ok := <-c` 还会将ok置为false。
+
+**func panic**
+`func panic(v interface{})`
+panic停止当前goroutine的执行，当函数F调用panic时，函数F的执行被立即停止，然后运行所有在F函数中定义的defer函数，后F返回到他的调用者G，F的行为就像panic一样，终止G的执行并运行G中所有defer函数，此过程会一直继续执行到goroutine所有的函数。panic可以通过内置的recover来捕获。
+
+**func recover**
+`func recover() interface{}`
+recover用来管理含有panic行为的goroutine，recover运行在defer函数中，获取panic抛出的错误值，并将程序恢复成正常执行状态。如果在defer函数之外调用recover，那么recover不会停止panic过程。如果goroutine中没有panic或者捕获的panic的值为nil，recover的返回值也是nil。
+
+## 上下文 (Context)
 
 结构定义
 
@@ -75,13 +88,3 @@ if err := s.Shutdown(ctx); err != nil {
     log.Fatal(err)
 }
 ```
-
-## 概念
-
-**闭包 (Closure)**
->闭包是对词法闭包(Lexical Closure)的简称, 当一个函数在其词法上下文中引用了自由变量, 则此函数和其引用环境组成的整体就叫做闭包 
-
-**高阶函数 (Higher-order function)**
->高阶函数是指使用其他函数作为参数、或者返回一个函数作为结果的函数, 至少满足下列一个条件:
-> * 接受一个或多个函数作为输入
-> * 输出一个函数

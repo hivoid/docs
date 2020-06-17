@@ -1,5 +1,7 @@
 # 开发语言
 
+## [通用知识](/language/generic)
+
 ## Go
 
 * [快速开始](/language/go/start)
