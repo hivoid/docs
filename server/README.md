@@ -2,6 +2,7 @@
 
 ## [命令与Shell](/server/shell)
 
+## [Linux](/server/linux)
 
 ## 常用生产工具
 
