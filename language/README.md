@@ -32,7 +32,9 @@
 * [gorm](https://github.com/jinzhu/gorm) | [doc](https://gorm.io/docs/) ORM _github.com/jinzhu/gorm_
 * [casbin](https://github.com/casbin/casbin) | [doc](https://casbin.org/docs/zh-CN/get-started) 访问权限控制 _github.com/casbin/casbin/v2_
 * [wire](https://github.com/google/wire) 依赖注入方式写代码/生成代码
-
+* [cli](https://github.com/urfave/cli) 搭建命令行应用
+* [daemon](https://github.com/takama/daemon) Daemon, 基于 init(systemd, upstart systemv...), 服务的安装与管理
+* [go-daemon](https://github.com/sevlyar/go-daemon) Daemon, Native go, 启动子进程，接管父进程
 
 ## PHP
 
