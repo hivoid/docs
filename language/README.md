@@ -20,21 +20,31 @@
 * [go 算法](https://github.com/0xAX/go-algorithms)
 * [go 设计模式](https://github.com/sevenelevenlee/go-patterns) , [pattern 2](https://github.com/tmrts/go-patterns)
 
-框架手册
+**框架手册**
 
 * [Gin](https://gin-gonic.com/zh-cn/docs/)
 * [Gin notes](/language/go/gin)
 
-常用包
+**常用包**
 
 * [viper](https://github.com/spf13/viper) 配置支持 _github.com/spf13/viper_
 * [mysql](https://github.com/go-sql-driver/mysql) Mysql _github.com/go-sql-driver/mysql_
-* [gorm](https://github.com/jinzhu/gorm) | [doc](https://gorm.io/docs/) ORM _github.com/jinzhu/gorm_
+* [gorm](https://github.com/go-gorm/gorm) | [doc](https://gorm.io/docs/) ORM _github.com/jinzhu/gorm_
 * [casbin](https://github.com/casbin/casbin) | [doc](https://casbin.org/docs/zh-CN/get-started) 访问权限控制 _github.com/casbin/casbin/v2_
 * [wire](https://github.com/google/wire) 依赖注入方式写代码/生成代码
 * [cli](https://github.com/urfave/cli) 搭建命令行应用
 * [daemon](https://github.com/takama/daemon) Daemon, 基于 init(systemd, upstart systemv...), 服务的安装与管理
 * [go-daemon](https://github.com/sevlyar/go-daemon) Daemon, Native go, 启动子进程，接管父进程
+
+**服务**
+
+* [gormigrate](https://github.com/go-gormigrate/gormigrate) 基于 gorm 数据库迁移
+* [migrate](https://github.com/golang-migrate/migrate) | [start](https://github.com/golang-migrate/migrate/blob/master/GETTING_STARTED.md) | [doc-cli](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate) 数据库迁移
+* [grpc](https://grpc.io/docs/) | [Quick Start](https://grpc.io/docs/languages/go/quickstart/)
+	
+**维护与调试**
+
+[delve](https://github.com/go-delve/delve) | [start](https://github.com/go-delve/delve/blob/master/Documentation/cli/getting_started.md) | [usage](https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv.md)
 
 ## PHP
 

@@ -30,3 +30,8 @@
 **Work with systemd**
 
 **Work with supervisor**
+
+## 维护
+
+* [pprof](https://github.com/google/pprof) | [a blog](https://eddycjy.com/posts/go/tools/2018-09-15-go-tool-pprof/) 性能监控分析
+* runtime/trace 运行时信息追踪
