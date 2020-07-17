@@ -11,12 +11,16 @@
 **参考**
 
 * [wiki](https://github.com/golang/go/wiki)
+* [go 教程](https://cloud.tencent.com/developer/doc/1101) 腾讯开发者 Go 教程
+* [开发手册](https://m.php.cn/manual/view/35126.html) php.cn go中文开发手册
 * [The way to go](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)
 * [go 101](https://gfw.go101.org/article/101.html)
 * [go专家编程](https://rainbowmango.gitbook.io/go/)
 * [go语言标准库](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/)
 * [go open source projects](https://github.com/hackstoic/golang-open-source-projects)
 * [格物 go awesome](https://shockerli.net/post/go-awesome/)
+* [china go awesome](https://github.com/hyper0x/awesome-go-China/blob/master/zh_CN/README.md) 华人创作的优秀 Go 语言项目和资源
+* [go构建web](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md) golang构建web应用全流程相关
 * [go 算法](https://github.com/0xAX/go-algorithms)
 * [go 设计模式](https://github.com/sevenelevenlee/go-patterns) , [pattern 2](https://github.com/tmrts/go-patterns)
 
@@ -35,6 +39,8 @@
 * [cli](https://github.com/urfave/cli) 搭建命令行应用
 * [daemon](https://github.com/takama/daemon) Daemon, 基于 init(systemd, upstart systemv...), 服务的安装与管理
 * [go-daemon](https://github.com/sevlyar/go-daemon) Daemon, Native go, 启动子进程，接管父进程
+* [go-cache](https://github.com/patrickmn/go-cache) 内存 key:value 缓存
+* gin [session](https://github.com/gin-contrib/sessions) session middleware
 
 **服务**
 
