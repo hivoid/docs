@@ -47,6 +47,8 @@
 * [gormigrate](https://github.com/go-gormigrate/gormigrate) 基于 gorm 数据库迁移
 * [migrate](https://github.com/golang-migrate/migrate) | [start](https://github.com/golang-migrate/migrate/blob/master/GETTING_STARTED.md) | [doc-cli](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate) 数据库迁移
 * [grpc](https://grpc.io/docs/) | [Quick Start](https://grpc.io/docs/languages/go/quickstart/)
+* [go-micro](https://github.com/micro/go-micro) | [plugins](https://github.com/micro/go-plugins) 微服务框架，用于分布式系统开发的标准库
+* [istio](https://istio.io/latest/zh/docs/) 连接、保护、控制和观测服务
 	
 **维护与调试**
 
